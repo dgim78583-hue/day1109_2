@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>영화 정보</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 40px 16px;
+    font-family: "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+    background: #12141a;
+    color: #e8e8ec;
+  }
+  h1 { text-align: center; margin: 0 0 32px; }
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+  }
+  .card {
+    background: #1c1f28;
+    border-radius: 12px;
+    padding: 24px;
+    border-top: 4px solid var(--accent);
+  }
+  .card h2 { margin: 0; }
+  .card .en { color: #9a9aa6; margin: 4px 0 16px; }
+  .plot { line-height: 1.6; margin-top: 16px; }
+  dl { margin: 0; display: grid; grid-template-columns: 80px 1fr; row-gap: 8px; }
+  dt { color: var(--accent); font-weight: bold; }
+  dd { margin: 0; }
+  .interstellar { --accent: #5fa8ff; }
+  .parasite { --accent: #7bd88f; }
+</style>
+</head>
+<body>
+  <h1>🎬 영화 정보</h1>
+  <div class="container">
+
+    <section class="card interstellar">
+      <h2>인터스텔라</h2>
+      <p class="en">Interstellar</p>
+      <dl>
+        <dt>개봉</dt><dd>2014년</dd>
+        <dt>감독</dt><dd>크리스토퍼 놀란</dd>
+        <dt>장르</dt><dd>SF, 드라마, 모험</dd>
+        <dt>러닝타임</dt><dd>169분</dd>
+        <dt>출연</dt><dd>매튜 매코너헤이, 앤 해서웨이, 제시카 차스테인, 마이클 케인</dd>
+        <dt>수상</dt><dd>제87회 아카데미 시각효과상</dd>
+      </dl>
+      <p class="plot">
+        식량난과 환경 재앙으로 황폐해진 지구. 전직 우주비행사 쿠퍼는 인류가 이주할 수 있는 새로운 행성을 찾기 위해
+        웜홀을 통과하는 우주 탐사 임무에 나선다. 시간과 중력의 한계 속에서 가족을 향한 사랑과 인류의 생존을 건 여정이 펼쳐진다.
+      </p>
+    </section>
+
+    <section class="card parasite">
+      <h2>기생충</h2>
+      <p class="en">Parasite</p>
+      <dl>
+        <dt>개봉</dt><dd>2019년</dd>
+        <dt>감독</dt><dd>봉준호</dd>
+        <dt>장르</dt><dd>드라마, 스릴러, 블랙 코미디</dd>
+        <dt>러닝타임</dt><dd>132분</dd>
+        <dt>출연</dt><dd>송강호, 이선균, 조여정, 최우식, 박소담</dd>
+        <dt>수상</dt><dd>칸 영화제 황금종려상, 제92회 아카데미 작품상·감독상·각본상·국제장편영화상</dd>
+      </dl>
+      <p class="plot">
+        전원 백수인 기택 가족은 아들 기우가 고액 과외 면접을 보러 박 사장의 저택에 들어가면서 서서히 그 집에 스며든다.
+        두 가족의 만남은 예기치 못한 사건으로 이어지며 계층 간의 격차를 날카롭게 보여준다.
+      </p>
+    </section>
+
+  </div>
+</body>
+</html>
